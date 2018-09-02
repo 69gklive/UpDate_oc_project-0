@@ -1,11 +1,14 @@
 package com.lambazon.domain;
 
 public class Product {
-	
+
 	private Integer id;
 	private String name, description, details;
 	private int quantity;
 	private double price;
+	// Declaration of the variable
+	public static double InventoryPrice;
+
 
 	public Product(int id, int quantity, double price, String name, String description) {
 		setId(id);
@@ -13,6 +16,7 @@ public class Product {
 		setPrice(price);
 		setName(name);
 		setDescription(description);
+
 	}
 
 	public Integer getId() {
@@ -52,7 +56,13 @@ public class Product {
 	}
 
 	public void setQuantity(int quantity) {
-		this.quantity = quantity;
+		// Condition for quantity will never be negative
+		// If negative quantity = 0
+		if (quantity < 0) {
+			this.quantity = 0;
+		} else {
+			this.quantity = quantity;
+		}
 	}
 
 	public double getPrice() {
@@ -60,11 +70,30 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+
+		// If price is under 0, price is equal to 0
+		if (price < 0)
+			this.price = 0;
+
+        // If price exceeds 1000, price is allays equal to 1000
+		else if (price > 1000)
+			this.price = 1000;
+
+		// In other conditions price is the price displayed
+		else {
+			this.price = price;
+		}
+
 	}
 
 	public double getInventoryPrice() {
-		// TODO Auto-generated method stub
-		return 0.0;
+		// Adding method to calculate the Inventory Price
+		InventoryPrice = quantity * price;
+		return InventoryPrice;
 	}
+
 }
+
+
+
+

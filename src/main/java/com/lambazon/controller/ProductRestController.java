@@ -1,16 +1,14 @@
 package com.lambazon.controller;
 
-import java.util.List;
-
-import javax.inject.Inject;
-
+import com.lambazon.domain.Product;
+import com.lambazon.service.ProductService;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.lambazon.domain.Product;
-import com.lambazon.service.ProductService;
+import javax.inject.Inject;
+import java.util.List;
 
 
 @RestController
@@ -28,4 +26,5 @@ public class ProductRestController {
 	public Product product	(@PathVariable Integer id, Model model) {
 		return productService.product(id);
 	}
+
 }
