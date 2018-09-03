@@ -30,7 +30,7 @@ public class ProductController {
     }
 
     // Declaration of the variable
-    public double totalInventoryAmount;
+    private double totalInventoryAmount;
 
 
     private double calculateTotalInventoryAmount() {
@@ -50,12 +50,13 @@ public class ProductController {
     // public double calculateTotalInventoryAmount() {
     // double totalInventoryAmount = 0;
     // for (Product P, productService.products()) {
-    // totalInventoryAmount += P.getInventoryPrice();}
-    // return totalInventoryAmount;}}
-
+    // totalInventoryAmount += P.getInventoryPrice();
+    // }
+    // return totalInventoryAmount;
+    // }
     // For each P(unit product) the function (price*quantity) is running and added in sum by (+=)
     // but unfortunately it was not possible to use "getInventoryPrice()" issued from another package,
-    // it wasn't been recognized here by this class, sorry !
+    // it wasn't been recognized (still red) here by this class, sorry !
 
 }
 
