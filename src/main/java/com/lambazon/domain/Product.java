@@ -4,8 +4,8 @@ public class Product {
 
 	private Integer id;
 	private String name, description, details;
-	private int quantity;
-	private double price;
+	private static int quantity;
+	private static double price;
 	// Declaration of the variable
 	public static double InventoryPrice;
 
@@ -86,7 +86,7 @@ public class Product {
 
 	}
 
-	public double getInventoryPrice() {
+	public static double getInventoryPrice() {
 		// Adding method to calculate the Inventory Price
 		InventoryPrice = quantity * price;
 		return InventoryPrice;
