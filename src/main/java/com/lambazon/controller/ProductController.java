@@ -35,7 +35,8 @@ public class ProductController {
      public double TotalInventoryAmount;
 
      private double calculateTotalInventoryAmount() {
-     //Calculate the TotalInventoryAmount by using the method getInventoryPrice
+
+     //Calculate the TotalInventoryAmount with using the method getInventoryPrice
      // The Total makes the sum (+=) of this function (quantity*price) for each product listed
             TotalInventoryAmount = 0;
             TotalInventoryAmount += getInventoryPrice();
