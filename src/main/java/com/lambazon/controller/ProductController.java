@@ -31,7 +31,6 @@ public class ProductController {
         return "product";
     }
 
-
      // Declaration of the variable
      public double TotalInventoryAmount;
 
