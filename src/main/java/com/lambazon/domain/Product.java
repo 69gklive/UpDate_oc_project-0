@@ -87,9 +87,9 @@ public class Product {
 
 	}
 
+	// Adding method to calculate the Inventory Price
 	public static double getInventoryPrice() {
-		// Adding method to calculate the Inventory Price
-		InventoryPrice = quantity * price;
+		     InventoryPrice = quantity * price;
 		return InventoryPrice;
 	}
 
