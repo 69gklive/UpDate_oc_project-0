@@ -18,7 +18,6 @@ public class Product {
 		setDescription(description);
 
 	}
-
 	public Integer getId() {
 		return id;
 	}
