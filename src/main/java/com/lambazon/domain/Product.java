@@ -55,6 +55,7 @@ public class Product {
 	}
 
 	public void setQuantity(int quantity) {
+
 		// Condition for quantity will never be negative
 		// If negative quantity = 0
 		if (quantity < 0) {
