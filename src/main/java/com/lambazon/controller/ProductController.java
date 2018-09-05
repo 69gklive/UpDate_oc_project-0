@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.inject.Inject;
-
 // Import the method from another package to use it in this class for calculating the TotalInventoryAmount
 import static com.lambazon.domain.Product.getInventoryPrice;
 
