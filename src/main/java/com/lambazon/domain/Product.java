@@ -70,7 +70,8 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-        // Condition for price never be negative and never above 1000
+
+		// Condition for price never be negative and never above 1000
 		// If price is under 0, price is equal to 0
 		if (price < 0)
 			this.price = 0;
